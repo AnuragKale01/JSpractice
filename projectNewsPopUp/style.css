@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: serif;
+    height: 100vh;
+    background-color: aqua;
+
+}
+.button{
+    position: relative;
+    padding: 15px 20px;
+    font-size: 1.5rem;
+    background-color: antiquewhite;
+    display: inline;
+    text-decoration: none;
+    color: burlywood;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+.button:hover{
+    letter-spacing: 0.1rem;
+}
+#newsletter{
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: beige;
+    z-index: 1000;
+    width: 450px;
+    padding: 80px 50px 50px;
+    transition: 0.5s;
+    border-radius: 4px;
+    visibility: hidden;
+}
+
+#newsletter.active{
+visibility: visible;
+top: 50%;
+}
+
+
+#newsletter h2{
+    text-align: center;
+    color: brown;
+    font-size: 20px;
+    margin: 20px 10px;
+}
+
+#newsletter .box{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.close{
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 20px;
+}
